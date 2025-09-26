@@ -1,20 +1,9 @@
 # AI review plugin for Gerrit Code Review
 
-poc-AI-Review plugin exposes an API which would help code reviewers to get the
-insights about the code review of the current change.
+Please generate API-key from Google AI studio https://aistudio.google.com/apikey
+and update `gerrit.config` with:
 
-# How To Build
-
-For building poc-ai-review plugin: 
-
-    bazel build //plugins/poc-ai-review:ai-review
-
-For running unit tests execute:
-
-    bazel build //plugins/poc-ai-review:poc-ai-review_tests
-
-
-
-
-
-# poc-ai-review
+```
+[plugin "poc-ai-review"]
+	api-key = <API-KEY>
+```
